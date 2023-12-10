@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,100;9..40,200;9..40,300;9..40,400;9..40,500;9..40,600;9..40,700;9..40,800;9..40,900;9..40,1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'DM Sans', sans-serif;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+}
+
+.app {
+    height: 100vh;
+    width: 100vw;
+    background-image: linear-gradient(to bottom right, #845EC2, #D65DB1, #FF6F91, #FF9671, #FFC75F, #F9F871);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.box {
+    height: 55%;
+    width: 50%;
+    background-color: #fff;
+    border-radius: 30px;
+    box-shadow: 0px 0px 100px #00000065;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 1.5vmax;
+}
+
+.header {
+    height: 20%;
+    width: 100%;
+    /* background-color: rgba(255, 255, 0, 0.2); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headerText {
+    font-size: 2.2vmax;
+    margin-bottom: 0.3vmax;
+    font-weight: 900;
+}
+
+.header > .line {
+    height: 10%;
+    width: 20%;
+    background-image: linear-gradient(to bottom right, #845EC2, #D65DB1, #FF6F91, #FF9671, #FFC75F, #F9F871);
+    border-radius: 50px;
+}
+
+.content {
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.quote { 
+    /* background-color: rgba(4, 0, 255, 0.2); */
+    min-height: 10%;
+    width: 100%;
+    padding: 0.8vmax;
+}
+
+.quote > p {
+    font-size: 1.5vmax;
+    font-weight: 500;
+    text-align: center;
+}
+
+.author {
+    display: flex;
+    /* background-color: rgba(0, 255, 34, 0.2); */
+    height: 20%;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 0px 3vmax;
+}
+
+.author > p {
+    font-size: 1vmax;
+    font-weight: 600;
+}
+
+.buttons {
+    height: 20%;
+    width: 100%;
+    /* background-color: rgba(255, 0, 0, 0.2); */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2vmax;
+}
+
+.buttons > button {
+    height: 60%;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+    background-image: linear-gradient(to bottom right, #845EC2, #D65DB1, #FF6F91, #FF9671);
+    color: #ffffff;
+    font-size: 1vmax;
+    font-weight: 800;
+    padding: 0px 1.2vmax;
+    display: flex;
+    align-items: center;
+    gap: 0.3vmax;
+    cursor: grab;
+    transition: 0.5s;
+}
+
+.buttons > button:hover {
+    font-size: 1.2vmax;
+    padding: 0px 1.6vmax;
+}
+
+.buttons > button:active {
+    cursor: grabbing;
+}
